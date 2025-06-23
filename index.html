@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LitematicaBlocker v2.0 - Proteção Avançada Contra Construção Automatizada</title>
+    <title>LitematicaBlocker - Proteção Contra Construção Automatizada</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -59,57 +59,6 @@
         .btn-secondary {
             background-color: var(--secondary);
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 40px 0;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            background-color: var(--dark);
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 10px;
-        }
-        h2 {
-            color: var(--primary);
-            margin-top: 40px;
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 8px;
-        }
-        .feature-box {
-            background-color: white;
-            border-radius: 8px;
-            padding: 25px;
-            margin: 25px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-left: 4px solid var(--secondary);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: var(--primary);
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
         pre {
             background-color: #f5f5f5;
             padding: 15px;
@@ -131,145 +80,115 @@
             color: white;
             border-radius: 5px;
         }
-        .github-btn {
-            background-color: #333;
-            display: inline-flex;
-            align-items: center;
-            padding: 10px 15px;
-            border-radius: 5px;
-            color: white;
-            text-decoration: none;
-            margin-top: 10px;
-        }
-        .github-btn img {
-            width: 20px;
-            margin-right: 10px;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            .tagline {
-                font-size: 1.1em;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>🚀 LitematicaBlocker v2.0</h1>
-        <p class="tagline">Proteção Total Contra Construção Automatizada no Minecraft 🛡️</p>
-        <p>O plugin definitivo para proteger seu servidor contra trapaças e construção automatizada</p>
+        <h1>🚀 LitematicaBlocker</h1>
+        <p class="tagline">Proteção Básica Contra Construção Automatizada 🛡️</p>
+        <p>Bloqueie construções automatizadas e uso de autoclickers em seu servidor</p>
         <a href="#download" class="btn">📥 Download</a>
-        <a href="#features" class="btn btn-secondary">✨ Ver Funcionalidades</a>
+        <a href="#features" class="btn btn-secondary">ℹ️ Funcionalidades</a>
     </header>
 
     <section id="features">
-        <h2>✨ Novas Funcionalidades</h2>
-        <div class="feature-box">
-            <h3>⏱️ Sistema de Limite de Velocidade Aprimorado</h3>
-            <p>Novo algoritmo inteligente que detecta padrões suspeitos de colocação de blocos com intervalo configurável por grupo de jogadores.</p>
+        <h2>✨ Funcionalidades Reais</h2>
+        
+        <div style="background:white; padding:20px; border-radius:8px; margin-bottom:25px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <h3>⏱️ Limite de Velocidade</h3>
+            <ul>
+                <li>Define um intervalo mínimo entre colocações de blocos (configurável)</li>
+                <li>Bloqueia colocação excessivamente rápida de blocos</li>
+                <li>Mensagem configurável quando o limite é excedido</li>
+            </ul>
         </div>
-        <div class="feature-box">
-            <h3>🏗️ Verificação de Suporte Multidimensional</h3>
-            <p>Sistema avançado que verifica suporte em múltiplas direções, com configuração detalhada por tipo de bloco.</p>
-        </div>
-        <div class="feature-box">
-            <h3>🔐 Sistema de Permissões Refinado</h3>
-            <p>Integração completa com LuckPerms e novos níveis de controle granular para diferentes tipos de verificação.</p>
-        </div>
-        <div class="feature-box">
-            <h3>📊 Monitoramento em Tempo Real</h3>
-            <p>Painel administrativo integrado com estatísticas de uso e detecções em tempo real.</p>
+        
+        <div style="background:white; padding:20px; border-radius:8px; margin-bottom:25px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <h3>🏗️ Verificação de Suporte</h3>
+            <ul>
+                <li>Verifica se blocos estão sendo colocados com suporte adequado</li>
+                <li>Bloqueia construção "flutuante"</li>
+                <li>Sistema de exceções para blocos específicos</li>
+            </ul>
         </div>
     </section>
 
     <section>
-        <h2>🔑 Sistema de Permissões Atualizado</h2>
-        <table>
+        <h2>🔑 Permissões</h2>
+        <table style="width:100%; border-collapse:collapse; margin:25px 0; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
             <tr>
-                <th>Permissão</th>
-                <th>Descrição</th>
-                <th>Padrão</th>
+                <th style="background-color:var(--primary); color:white;">Permissão</th>
+                <th style="background-color:var(--primary); color:white;">Descrição</th>
+                <th style="background-color:var(--primary); color:white;">Padrão</th>
             </tr>
             <tr>
-                <td><code>litematicablocker.admin</code></td>
-                <td>Acesso total ao painel administrativo</td>
+                <td><code>litematicablocker.toggle</code></td>
+                <td>Permite ativar/desativar o plugin via comando</td>
                 <td>false</td>
             </tr>
             <tr>
-                <td><code>litematicablocker.bypass.speed</code></td>
-                <td>Ignora restrições de velocidade</td>
+                <td><code>litematicablocker.bypass</code></td>
+                <td>Ignora as restrições do plugin</td>
                 <td>false</td>
-            </tr>
-            <tr>
-                <td><code>litematicablocker.bypass.support</code></td>
-                <td>Ignora verificações de suporte</td>
-                <td>false</td>
-            </tr>
-            <tr>
-                <td><code>litematicablocker.monitor</code></td>
-                <td>Acesso às estatísticas de monitoramento</td>
-                <td>op</td>
             </tr>
         </table>
     </section>
 
     <section>
-        <h2>⚙️ Configuração Avançada</h2>
-        <pre><code># Configurações Principais
-system:
-  enabled: true
-  debugMode: false
-  databaseStorage: true
+        <h2>📋 Comandos</h2>
+        <pre>/litematicablocker [on|off|info|reload]</pre>
+        <p>Aliases: <code>/lb</code>, <code>/lblocker</code></p>
+        <ul>
+            <li><code>on</code> - Ativa o plugin</li>
+            <li><code>off</code> - Desativa o plugin</li>
+            <li><code>info</code> - Mostra informações do plugin</li>
+            <li><code>reload</code> - Recarrega a configuração</li>
+        </ul>
+    </section>
 
-speedCheck:
-  minIntervalMs: 100
-  violationThreshold: 5
-  actionOnViolation: KICK
+    <section>
+        <h2>⚙️ Configuração</h2>
+        <pre><code># Configurações principais
+enabled: true
+minPlaceIntervalMs: 100 # Intervalo mínimo entre blocos (ms)
+maxAgeMs: 10000 # Tempo máximo de armazenamento de dados
 
-supportCheck:
-  enabled: true
-  checkDirections: [DOWN, NORTH, SOUTH, EAST, WEST]
-  exceptions:
-    - TORCH
-    - REDSTONE_TORCH
-    - LEVER
-    - SIGN
-
-monitoring:
-  enabled: true
-  retentionPeriod: 7d
-  alertThreshold: 100
+# Exceções de verificação de suporte
+exceptions:
+  # - TORCH
+  # - WALL_TORCH
+  # - REDSTONE_TORCH
+  # - REDSTONE_WALL_TORCH
+  # - LEVER
+  # - OAK_SIGN
+  # ... outras opções disponíveis
 
 messages:
-  speedViolation: "§cVocê está colocando blocos muito rápido!"
-  supportViolation: "§cEste bloco precisa de suporte!"
-  adminAlert: "§b[Admin] §fJogador %player% violou regras de construção"
-</code></pre>
+  show-too-fast: false
+  too-fast: "§cVocê está colocando blocos rápido demais!"
+  show-no-support: true
+  no-support: "§cVocê não pode colocar blocos sem apoio!"</code></pre>
     </section>
 
     <section id="download">
         <h2>📥 Download e Instalação</h2>
-        <div class="feature-box" style="text-align: center;">
-            <h3>Versão Atual: v2.0</h3>
+        <div style="text-align:center;">
+            <h3>Versão Atual: v1.0</h3>
             <p>Compatível com Minecraft 1.19.x até 1.21.6 (Bukkit/Spigot/Paper)</p>
-            <a href="https://github.com/ivonielson/litematicablocker/raw/main/LitematicaBlocker-2.0.jar"  class="btn" style="font-size: 1.2em;">
-                ⬇️ Baixar LitematicaBlocker v2.0
-            </a>
-            <h4 style="margin-top: 25px;">Guia de Instalação</h4>
-            <ol style="text-align: left; display: inline-block; margin: 15px auto;">
-                <li>Baixe o arquivo JAR mais recente</li>
+            <a href="https://github.com/ivonielson/litematicablocker/raw/main/LitematicaBlocker-1.0.jar"  
+               class="btn" style="font-size:1.2em;">⬇️ Baixar LitematicaBlocker.jar</a>
+            <h4 style="margin-top:25px;">Instalação</h4>
+            <ol style="text-align:left; display:inline-block; margin:15px auto;">
+                <li>Baixe o arquivo .jar</li>
                 <li>Coloque na pasta <code>plugins/</code> do seu servidor</li>
                 <li>Reinicie o servidor</li>
-                <li>Configure as permissões usando LuckPerms</li>
-                <li>Ajuste as configurações no arquivo config.yml</li>
+                <li>Configure as permissões conforme necessário</li>
             </ol>
         </div>
     </section>
 
     <footer>
-        <p>LitematicaBlocker v2.0 - Desenvolvido com ❤️ por IvoShow</p>
+        <p>LitematicaBlocker - Desenvolvido por IvoShow</p>
         <p>© 2025 - Contato: Discord - ivoshow#0804</p>
         <p><a href="https://github.com/ivonielson/litematicablocker"  style="color: white;">GitHub do Projeto</a></p>
     </footer>
