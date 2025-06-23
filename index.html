@@ -80,13 +80,38 @@
             color: white;
             border-radius: 5px;
         }
+        .developer-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--light);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .developer-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .developer-section h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: var(--primary);
+        }
+        .developer-section p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: var(--dark);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>🚀 LitematicaBlocker</h1>
-        <p class="tagline">Proteção Básica Contra Construção Automatizada 🛡️</p>
-        <p>Bloqueie construções automatizadas e uso de autoclickers em seu servidor</p>
+        <p class="tagline">Proteção Contra Construção Automatizada 🛡️</p>
+        <p>Bloqueie construções automatizadas e uso de autoclickers, litematica print em seu servidor</p>
         <a href="#download" class="btn">📥 Download</a>
         <a href="#features" class="btn btn-secondary">ℹ️ Funcionalidades</a>
     </header>
@@ -175,7 +200,7 @@ messages:
         <div style="text-align:center;">
             <h3>Versão Atual: v1.0</h3>
             <p>Compatível com Minecraft 1.19.x até 1.21.6 (Bukkit/Spigot/Paper)</p>
-            <a href="https://github.com/ivonielson/litematicablocker/raw/main/LitematicaBlocker-1.0.jar"  
+            <a href="https://github.com/ivonielson/litematicablocker/raw/main/LitematicaBlocker-1.0.jar"     
                class="btn" style="font-size:1.2em;">⬇️ Baixar LitematicaBlocker.jar</a>
             <h4 style="margin-top:25px;">Instalação</h4>
             <ol style="text-align:left; display:inline-block; margin:15px auto;">
@@ -187,10 +212,20 @@ messages:
         </div>
     </section>
 
+    <!-- Nova Seção: Sobre o Desenvolvedor -->
+    <section class="developer-section">
+        <h2>Sobre o Desenvolvedor</h2>
+        <img src="https://mc-heads.net/body/ivoshow/150"  alt="Skin do IvoShow">
+        <h3>IvoShow</h3>
+        <p>Desenvolvedor apaixonado por Minecraft.</p>
+        <p>Contato: <a href="https://discord.com/users/ivoshow#0804" style="color: var(--primary);">Discord: ivoshow#0804</a></p> 
+       
+    </section>
+
     <footer>
         <p>LitematicaBlocker - Desenvolvido por IvoShow</p>
         <p>© 2025 - Contato: Discord - ivoshow#0804</p>
-        <p><a href="https://github.com/ivonielson/litematicablocker"  style="color: white;">GitHub do Projeto</a></p>
+        
     </footer>
 </body>
 </html>
